@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (_, res) => {
-  res.sendFile(__dirname + '/public/docs/index.html')
+  res.sendFile(__dirname + '/public/index.html')
 })
 
 app.use(express.static(`public`))
