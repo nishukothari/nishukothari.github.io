@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import WelcomeView from './WelcomeView'
+import MasterView from './MasterView'
 
 const e = React.createElement
 try {
-    const navContainer = document.querySelector('#welcome-view')
+    const navContainer = document.querySelector('#master-view')
 
-    ReactDOM.render(e(WelcomeView), navContainer)
+    ReactDOM.render(e(MasterView), navContainer)
 }
 catch (e) { }

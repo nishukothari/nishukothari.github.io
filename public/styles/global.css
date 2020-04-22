@@ -1,0 +1,17 @@
+.leftCol{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+.masterContainer{
+    height: 100vh;
+}
+
+.rightCol{
+    background-color: whitesmoke;
+}
+
+.rowHolder{
+    height: 100% !important;
+}
+
