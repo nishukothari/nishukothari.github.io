@@ -1,0 +1,37 @@
+{
+  "name": "nishu-kothari-personal-website",
+  "version": "1.0.0",
+  "description": "Nishu's Personal Website",
+  "homepage": "http://nishukothari.github.io/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "wp": "./node_modules/.bin/webpack --watch",
+    "build": "./node_modules/.bin/webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Nishant Kothari",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "gh-pages": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-preset-minify": "^0.5.1",
+    "express": "^4.17.1",
+    "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.11.0"
+  }
+}
