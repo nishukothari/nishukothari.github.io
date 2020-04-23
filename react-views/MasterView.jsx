@@ -1,30 +1,32 @@
 import React from 'react'
 import { Container, Col, Row} from 'react-bootstrap'
 
+import HomeView from './HomeView'
+
 class MasterView extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            currTab: 0
+        }
     }
 
     render(){
 
-        const leftCol = (
-            <Col xs={{span: 6, offset: 0}} className="leftCol">
-                Left Column
-            </Col>
-        )
+        let myRender = <React.Fragment></React.Fragment>
 
-        const rightCol = (
-            <Col xs={{span: 6, offset: 0}} className="rightCol">
-                Right Column
-            </Col>
-        )
+        switch(this.state.currTab){
+            case(0):
+                myRender = <HomeView></HomeView>
+                break;
+        }
         
         return(
         <Container fluid className="masterContainer">
             <Row className="rowHolder">
-                {leftCol}
-                {rightCol}
+                <Col xs={{span: 12, offset: 0}} className="viewHolder">
+                    {myRender}
+                </Col>
             </Row>
         </Container>)
     }
