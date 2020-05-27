@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Col, Row} from 'react-bootstrap'
 
 import HomeView from './HomeView'
+import ToggleButton from './ToggleButton'
 
 class MasterView extends React.Component {
     constructor(props) {
@@ -23,9 +24,23 @@ class MasterView extends React.Component {
         
         return(
         <Container fluid className="masterContainer">
-            <Row className="rowHolder">
-                <Col xs={{span: 12, offset: 0}} className="viewHolder">
-                    {myRender}
+            <ToggleButton></ToggleButton>
+            <Row className="contRow">
+                <Col xs={{span: 12, offset: 0}} className="rowHolder">
+                    <Row className="contRow">
+                        <Col xs={{span: 2, offset: 0}} className="myNav">
+                            <Col xs={{span:7, offset: 5}}>
+                                <Row><div className="navText">Home</div></Row>
+                                <Row><div className="navText">Resume</div></Row>
+                                <Row><div className="navText">Projects</div></Row>
+                                <Row><div className="navText">About Me</div></Row>
+                                <Row><div className="navText">Contact</div></Row>
+                            </Col>
+                        </Col>
+                        <Col xs={{span: 9, offset: 0}} className="viewHolder">
+                            {myRender}
+                        </Col>
+                    </Row>
                 </Col>
             </Row>
         </Container>)
