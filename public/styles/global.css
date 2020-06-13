@@ -1,4 +1,5 @@
 .buttonStyle{
+    font-size: x-large;
     background-color: transparent !important;
     box-shadow: none !important;
     border: transparent !important;
@@ -49,25 +50,32 @@
 }
 
 .navText{
+    font-size: x-large;
     visibility: hidden;
-    transition:200ms ease;
+    transition:50ms ease;
+    transition-delay: 90ms;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: transparent !important;
+}
+
+.navTextTop{
+    position: fixed;
+    top: 2%;
 }
 
 .profPic{
     position: fixed;
     top: 50%;
     left: 50%;
-    max-width: 35%;
-    max-height: 35%;
-    width: auto;
-    height: auto;
     transform: translate(-50%, -70%)
     
 }
 
 .rowHolder{
     height: 100% !important;
-    background-color: #555555;
+    background-image: url("../images/Mountains.jpg");
+    background-size: cover;
     color: white;
 }
 

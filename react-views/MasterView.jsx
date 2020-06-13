@@ -1,7 +1,8 @@
 import React from 'react'
-import { Container, Col, Row} from 'react-bootstrap'
+import { Container, Col, Row, Button} from 'react-bootstrap'
 
 import HomeView from './HomeView'
+import ProjectView from './ProjectView'
 import ToggleButton from './ToggleButton'
 
 class MasterView extends React.Component {
@@ -10,18 +11,26 @@ class MasterView extends React.Component {
         this.state = {
             currTab: 0
         }
+
+        this.changeView = this.changeView.bind(this)
+    }
+
+    changeView(argument){
+        if(argument != this.state.currTab){
+            this.setState({
+                currTab: argument,
+            })
+        }
     }
 
     render(){
+        let views = new Map()
+        views.set(0, <HomeView/>)
+        views.set(1, <React.Fragment/>)
+        views.set(2, <ProjectView/>)
+        views.set(3, <React.Fragment/>)
+        views.set(4, <React.Fragment/>)
 
-        let myRender = <React.Fragment></React.Fragment>
-
-        switch(this.state.currTab){
-            case(0):
-                myRender = <HomeView></HomeView>
-                break;
-        }
-        
         return(
         <Container fluid className="masterContainer">
             <ToggleButton></ToggleButton>
@@ -30,15 +39,17 @@ class MasterView extends React.Component {
                     <Row className="contRow">
                         <Col xs={{span: 2, offset: 0}} className="myNav">
                             <Col xs={{span:7, offset: 5}}>
-                                <Row><div className="navText">Home</div></Row>
-                                <Row><div className="navText">Resume</div></Row>
-                                <Row><div className="navText">Projects</div></Row>
-                                <Row><div className="navText">About Me</div></Row>
-                                <Row><div className="navText">Contact</div></Row>
+                                <div className="navTextTop">
+                                <Row><Button className="navText" onClick={() => this.changeView(0)}>Home</Button></Row>
+                                <Row><Button className="navText" onClick={() => this.changeView(1)}>Resume</Button></Row>
+                                <Row><Button className="navText" onClick={() => this.changeView(2)}>Projects</Button></Row>
+                                <Row><Button className="navText" onClick={() => this.changeView(3)}>About Me</Button></Row>
+                                <Row><Button className="navText" onClick={() => this.changeView(4)}>Contact</Button></Row>
+                                </div>
                             </Col>
                         </Col>
                         <Col xs={{span: 9, offset: 0}} className="viewHolder">
-                            {myRender}
+                            {views.get(this.state.currTab)}
                         </Col>
                     </Row>
                 </Col>

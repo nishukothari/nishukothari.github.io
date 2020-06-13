@@ -15,19 +15,21 @@ class ToggleButton extends React.Component{
         if(this.state.open){
             document.getElementsByClassName("myNav")[0].style.maxWidth = "0%"
             document.getElementsByClassName("myNav")[0].style.visibility = "hidden"
-            for(item in document.getElementsByClassName("navText")){
-                item.style.visibility = "hidden"
+            var barText = document.getElementsByClassName("navText");
+            for (var i = 0; i < barText.length; i++) {
+                barText.item(i).style.visibility = "hidden";
             }
             this.setState({
-                open: false
+                open: false,
             })
         }
 
         else{
             document.getElementsByClassName("myNav")[0].style.maxWidth = "25%"
             document.getElementsByClassName("myNav")[0].style.visibility = "visible"
-            for(item in document.getElementsByClassName("navText")){
-                item.style.visibility = "visible"
+            var barText = document.getElementsByClassName("navText");
+            for (var i = 0; i < barText.length; i++) {
+                barText.item(i).style.visibility = "visible";
             }
             this.setState({
                 open: true
@@ -36,10 +38,10 @@ class ToggleButton extends React.Component{
     }
 
     render(){
-
+        let text = (this.state.open) ? "✕" : "☰"
         return(
                 <Button className="buttonStyle" onClick={this.collapse}>
-                    ☰
+                    {text}
                 </Button>
         )
     }
