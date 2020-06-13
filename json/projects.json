@@ -1,3 +1,94 @@
 {
-    
+    "projArray" : [
+        {
+            "name": "Assembler, Linker, Simulator",
+            "key": "al",
+            "category": "School",
+            "tags": ["Command Line", "Computer Architecture"],
+            "languages": ["C", "Assembly"],
+            "featured": true,
+            "description": " "
+        },
+        {
+            "name": "Crabster Exam Server",
+            "key": "cs",
+            "category": "Professional",
+            "tags": ["Frontend", "Web Development"],
+            "languages": ["HTML", "CSS", "Javascript"],
+            "featured": true,
+            "description": " "
+        },
+        {
+            "name": "Image Resizer",
+            "key": "ir",
+            "category": "School",
+            "tags": ["Command Line","Computer Vision", "Data Structures"],
+            "languages": ["C++"],
+            "featured": false,
+            "description": " "
+        },
+        {
+            "name": "Michigan Ticket App",
+            "key": "mt",
+            "category": "Personal",
+            "tags": ["Mobile","Frontend"],
+            "languages": ["Java"],
+            "featured": false,
+            "description": " "
+        },
+        {
+            "name": "MNIST Classifier",
+            "key": "mc",
+            "category": "Personal",
+            "tags": ["Neural Net", "Command Line", "Computer Vision", "Machine Learning"],
+            "languages": ["C++"],
+            "featured": true,
+            "description": " "
+        },
+        {
+            "name": "Piazza Post Classifier",
+            "key": "pc",
+            "category": "School",
+            "tags": ["Machine Learning", "Data Structures", "Command Line"],
+            "languages": ["C++"],
+            "featured": false,
+            "description": " "
+        },
+        {
+            "name": "Portfolio Website",
+            "key": "pw",
+            "category": "Personal",
+            "tags": ["Frontend", "Web Development"],
+            "languages": ["HTML", "CSS", "Javascript"],
+            "featured": true,
+            "description": " "
+        },
+        {
+            "name": "SillyQL",
+            "key": "sq",
+            "category": "School",
+            "tags": ["Data Structures", "Command Line", "Databases"],
+            "languages": ["C++"],
+            "featured": false,
+            "description": " "
+        },
+        {
+            "name": "Stock Market Simulator",
+            "key": "sm",
+            "category": "School",
+            "tags": ["Command Line", "Data Structures"],
+            "languages": ["C++"],
+            "featured": false,
+            "description": " "
+        },
+        {
+            "name": "Thread Library",
+            "key": "tl",
+            "category": "School",
+            "tags": ["Operating Systems"],
+            "languages": ["C++"],
+            "featured": true,
+            "description": " "
+        }
+    ]
 }
