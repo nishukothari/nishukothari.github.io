@@ -27,7 +27,7 @@ class MasterView extends React.Component {
         let views = new Map()
         views.set(0, <HomeView/>)
         views.set(1, <React.Fragment/>)
-        views.set(2, <ProjectView/>)
+        views.set(2, <React.Fragment/>)
         views.set(3, <React.Fragment/>)
         views.set(4, <React.Fragment/>)
 
