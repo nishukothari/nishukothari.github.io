@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../public/styles/HomeView.css'
 
 class HomeView extends React.Component {
     constructor(props) {
@@ -8,7 +8,7 @@ class HomeView extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className="home">
                 <div className="sayHello">Hello! I'm Nishu Kothari</div>
                 <img src="images/profile.png" className="profPic"></img>
                 <div className="subHeader">Programmer · Student · Musician</div>

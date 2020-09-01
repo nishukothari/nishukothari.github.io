@@ -13,8 +13,8 @@
             "name": "Crabster Exam Server",
             "key": "cs",
             "category": "Professional",
-            "tags": ["Frontend", "Web Development"],
-            "languages": ["HTML", "CSS", "Javascript"],
+            "tags": ["Frontend", "Backend","Web Development"],
+            "languages": ["HTML", "CSS", "Javascript", "Python", "Swift"],
             "featured": true,
             "description": " "
         },
