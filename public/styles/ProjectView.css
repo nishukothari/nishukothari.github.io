@@ -3,3 +3,17 @@
     background-size: cover;
     height: 100%;
 }
+
+.projContainer {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding: 0%;
+}
+
+.projCard {
+    height: 160px;
+    width:  26%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
