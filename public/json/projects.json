@@ -12,8 +12,8 @@
             "name": "Crabster Exam Server",
             "key": "cs",
             "category": "Professional",
-            "tags": ["Frontend", "Backend","Web Development"],
-            "languages": ["Featured", "HTML", "CSS", "Javascript", "Python", "Swift"],
+            "tags": ["Featured", "Frontend", "Backend","Web Development"],
+            "languages": ["HTML", "CSS", "Javascript", "Python", "Swift"],
             "description": " "
         },
         {
@@ -73,7 +73,7 @@
             "description": " "
         },
         {
-            "name": "Thread Library",
+            "name": "Kernel Fragments",
             "key": "tl",
             "category": "School",
             "tags": ["Featured", "Operating Systems"],

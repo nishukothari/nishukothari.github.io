@@ -1,19 +1,38 @@
 .project {
     background-color: lightgray;
     background-size: cover;
-    height: 100%;
+    min-height: 100%;
 }
 
 .projContainer {
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: auto;
     padding: 0%;
 }
 
 .projCard {
-    height: 160px;
-    width:  26%;
-    margin-left: 3%;
-    margin-right: 3%;
+    height: 250px;
+    width:  29%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.pCardHeader {
+    background-color: midnightblue;
+    color: white;
+}
+
+.pCardBody {
+    background-color: black;
+    color: white;
+}
+
+.pCardFooter {
+    background-color: black;
+    color: white;
 }

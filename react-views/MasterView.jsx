@@ -34,7 +34,7 @@ class MasterView extends React.Component {
 
         return(
             <div className="FullSite">
-                <Navbar bg="dark" expand="lg">
+                <Navbar className="Nav" expand="lg">
                     <Nav>
                         <Nav.Link className="Tab" onClick={() => this.changeView(0)}>Home</Nav.Link>
                         <Nav.Link className="Tab" onClick={() => this.changeView(1)}>Projects</Nav.Link>

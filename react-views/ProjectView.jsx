@@ -11,7 +11,7 @@ class ProjectView extends React.Component{
             display: [],
             shownElements: [],
             elements: projectData,
-            currentTagFilter: "Featured",
+            currentTagFilter: "All",
             currentLanguageFilter: "All",
             languages: new Set(),
             tags: new Set()
@@ -38,7 +38,7 @@ class ProjectView extends React.Component{
             for(var j = 0; j < p["tags"].length; ++j){
                 var tag = p["tags"][j]
                 this.state.tags.add(tag)
-                if(!tagMatch && (tag == this.state.currentTagFilter || this.state.currentTagFeature == "All")){
+                if(!tagMatch && (tag == this.state.currentTagFilter || this.state.currentTagFilter == "All")){
                     tagMatch = true
                 }
             }
@@ -62,9 +62,9 @@ class ProjectView extends React.Component{
                 var show = this.state.shownElements[i]
                 rowOfThree.push(
                     <Card className="projCard">
-                        <Card.Header>{show["name"]}</Card.Header>
-                        <Card.Body>{show["description"]}</Card.Body>
-                        <Card.Footer></Card.Footer>
+                        <Card.Header className="pCardHeader">{show["name"]}</Card.Header>
+                        <Card.Body className="pCardBody">{show["description"]}</Card.Body>
+                        <Card.Footer className="pCardFooter"></Card.Footer>
                     </Card>
                 )
                 ++i
