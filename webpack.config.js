@@ -21,6 +21,14 @@ module.exports = {
             presets: ['@babel/env', '@babel/react', 'minify']
           }
         }
+      },
+      {  
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },

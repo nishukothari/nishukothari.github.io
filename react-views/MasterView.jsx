@@ -1,9 +1,12 @@
 import React from 'react'
-import { Container, Col, Row, Button} from 'react-bootstrap'
+import { Navbar, Nav } from 'react-bootstrap'
 
 import HomeView from './HomeView'
 import ProjectView from './ProjectView'
-import ToggleButton from './ToggleButton'
+import ResumeView from './ResumeView'
+
+import '../public/styles/MasterView.css'
+
 
 class MasterView extends React.Component {
     constructor(props) {
@@ -26,35 +29,23 @@ class MasterView extends React.Component {
     render(){
         let views = new Map()
         views.set(0, <HomeView/>)
-        views.set(1, <React.Fragment/>)
-        views.set(2, <React.Fragment/>)
+        views.set(1, <ProjectView/>)
+        views.set(2, <ResumeView/>)
         views.set(3, <React.Fragment/>)
         views.set(4, <React.Fragment/>)
 
         return(
-        <Container fluid className="masterContainer">
-            <ToggleButton></ToggleButton>
-            <Row className="contRow">
-                <Col xs={{span: 12, offset: 0}} className="rowHolder">
-                    <Row className="contRow">
-                        <Col xs={{span: 2, offset: 0}} className="myNav">
-                            <Col xs={{span:7, offset: 5}}>
-                                <div className="navTextTop">
-                                <Row><Button className="navText" onClick={() => this.changeView(0)}>Home</Button></Row>
-                                <Row><Button className="navText" onClick={() => this.changeView(1)}>Resume</Button></Row>
-                                <Row><Button className="navText" onClick={() => this.changeView(2)}>Projects</Button></Row>
-                                <Row><Button className="navText" onClick={() => this.changeView(3)}>About Me</Button></Row>
-                                <Row><Button className="navText" onClick={() => this.changeView(4)}>Contact</Button></Row>
-                                </div>
-                            </Col>
-                        </Col>
-                        <Col xs={{span: 9, offset: 0}} className="viewHolder">
-                            {views.get(this.state.currTab)}
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
-        </Container>)
+            <div className="FullSite">
+                <Navbar className="Nav" expand="lg">
+                    <Nav>
+                        <Nav.Link className="Tab" onClick={() => this.changeView(0)}>Home</Nav.Link>
+                        <Nav.Link className="Tab" onClick={() => this.changeView(1)}>Projects</Nav.Link>
+                        <Nav.Link className="Tab" onClick={() => this.changeView(2)}>Resume</Nav.Link>
+                    </Nav>
+                </Navbar>
+                {views.get(this.state.currTab)}
+            </div>
+        )
     }
 }
 

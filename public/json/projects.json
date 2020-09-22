@@ -4,19 +4,17 @@
             "name": "Assembler, Linker, Simulator",
             "key": "al",
             "category": "School",
-            "tags": ["Command Line", "Computer Architecture"],
+            "tags": ["Featured", "Command Line", "Computer Architecture"],
             "languages": ["C", "Assembly"],
-            "featured": true,
-            "description": " "
+            "description": "Command Line application that converted assembly language files from a provided ISA into object files, linked those object files together, and simulated the output of the resulting executable."
         },
         {
             "name": "Crabster Exam Server",
             "key": "cs",
             "category": "Professional",
-            "tags": ["Frontend", "Web Development"],
-            "languages": ["HTML", "CSS", "Javascript"],
-            "featured": true,
-            "description": " "
+            "tags": ["Featured", "Frontend", "Backend","Web Development"],
+            "languages": ["HTML", "CSS", "Javascript", "Python", "Swift"],
+            "description": "Randomized exam server used to administer exams to 2500+ students and 3+ classes per semester."
         },
         {
             "name": "Image Resizer",
@@ -24,8 +22,15 @@
             "category": "School",
             "tags": ["Command Line","Computer Vision", "Data Structures"],
             "languages": ["C++"],
-            "featured": false,
-            "description": " "
+            "description": "Command Line application that uses a seam-carving algorithm to crop images in a .ppm format."
+        },
+        {
+            "name": "Kernel Fragments",
+            "key": "tl",
+            "category": "School",
+            "tags": ["Featured", "Operating Systems"],
+            "languages": ["C++"],
+            "description": "Thread Library, Memory Manager (Pager), and Network File Server"
         },
         {
             "name": "Michigan Ticket App",
@@ -33,17 +38,15 @@
             "category": "Personal",
             "tags": ["Mobile","Frontend"],
             "languages": ["Java"],
-            "featured": false,
-            "description": " "
+            "description": "Mobile application designed at the University of Michigan Hackathon to allow students to buy and sell their student football tickets."
         },
         {
             "name": "MNIST Classifier",
             "key": "mc",
             "category": "Personal",
-            "tags": ["Neural Net", "Command Line", "Computer Vision", "Machine Learning"],
+            "tags": ["Featured", "Neural Net", "Command Line", "Computer Vision", "Machine Learning"],
             "languages": ["C++"],
-            "featured": true,
-            "description": " "
+            "description": "Single Layer Perceptron used to classify handwritten digits in the MNIST database."
         },
         {
             "name": "Piazza Post Classifier",
@@ -51,17 +54,15 @@
             "category": "School",
             "tags": ["Machine Learning", "Data Structures", "Command Line"],
             "languages": ["C++"],
-            "featured": false,
-            "description": " "
+            "description": "Trained classifier that uses a log-score algorithm to assign labels to the content of a piazza post."
         },
         {
             "name": "Portfolio Website",
             "key": "pw",
             "category": "Personal",
-            "tags": ["Frontend", "Web Development"],
+            "tags": ["Featured", "Frontend", "Web Development"],
             "languages": ["HTML", "CSS", "Javascript"],
-            "featured": true,
-            "description": " "
+            "description": "You're looking at it!"
         },
         {
             "name": "SillyQL",
@@ -69,8 +70,7 @@
             "category": "School",
             "tags": ["Data Structures", "Command Line", "Databases"],
             "languages": ["C++"],
-            "featured": false,
-            "description": " "
+            "description": "Implementation of a simplified SQL"
         },
         {
             "name": "Stock Market Simulator",
@@ -78,17 +78,15 @@
             "category": "School",
             "tags": ["Command Line", "Data Structures"],
             "languages": ["C++"],
-            "featured": false,
-            "description": " "
+            "description": "Simulator that given timestamps, buy, and sell orders matches buyers to sellers and tracks the median purchase price of each stock."
         },
         {
-            "name": "Thread Library",
-            "key": "tl",
-            "category": "School",
-            "tags": ["Operating Systems"],
-            "languages": ["C++"],
-            "featured": true,
-            "description": " "
+            "name": "Voluntutors",
+            "key": "sm",
+            "category": "Personal",
+            "tags": ["Featured", "Frontend","Web Development"],
+            "languages": ["HTML", "CSS", "Javascript"],
+            "description": "Web application for connecting volunteer tutors with schools/parents/students in low-income neighborhoods."
         }
     ]
 }

@@ -1,118 +1,12 @@
-.buttonStyle{
-    font-size: x-large;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: transparent !important;
-    position: fixed;
-    z-index: 1;
-    grid-area: 1 / 1 / 2 / 2;
+.pw {
+    min-height: 100%;
 }
 
-.contRow{
-    height: 100% !important;
-    grid-area: 1 / 1 / 11 / 11;
+body {
+    min-height: 100vh;
 }
 
-.logo{
-    max-width: 30px;
-    max-height: 30px;
-    margin-right: 7px;
-    margin-left: 7px;
-}
-
-.logoRow{
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    text-align: center;
-    width: 50vh;
-}
-
-.masterContainer{
-    height: 100vh;
-    padding-left: 0%;
-    padding-right: 0%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.myNav{
-    max-width: 0%;
-    width: 0%;
-    background-color: black;
-    margin: 0%;
-    padding: 0%;
-    transition:400ms ease;
-}
-
-.navText{
-    font-size: x-large;
-    visibility: hidden;
-    transition:50ms ease;
-    transition-delay: 90ms;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: transparent !important;
-}
-
-.navTextTop{
-    position: fixed;
-    top: 2%;
-}
-
-.profPic{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%)
-    
-}
-
-.rowHolder{
-    height: 100% !important;
-    background-image: url("../images/Mountains.jpg");
-    background-size: cover;
-    color: white;
-}
-
-.sayHello{
-    position: fixed;
-    text-align: center;
-    left: 50%;
-    top: 17%;
-    transform: translate(-50%, 0%);
-    font-weight: 600;
-    font-size: 5vh;
-    text-decoration: underline;
-    width: fit-content;
-}
-
-.subHeader{
-    position: fixed;
-    text-align: center;
-    left: 50%;
-    top: 63%;
-    transform: translate(-50%, 0%);
-    font-weight: 500;
-    font-size: 2.5vh;
-    width: fit-content;
-}
-
-
-.viewHolder{
-    width: 100%;
-    max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-}
-
-/*Font Overriding for Div Text*/
-
-div{
+div {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
