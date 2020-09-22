@@ -3,8 +3,10 @@ import { Navbar, Nav } from 'react-bootstrap'
 
 import HomeView from './HomeView'
 import ProjectView from './ProjectView'
+import ResumeView from './ResumeView'
 
 import '../public/styles/MasterView.css'
+
 
 class MasterView extends React.Component {
     constructor(props) {
@@ -28,7 +30,7 @@ class MasterView extends React.Component {
         let views = new Map()
         views.set(0, <HomeView/>)
         views.set(1, <ProjectView/>)
-        views.set(2, <React.Fragment/>)
+        views.set(2, <ResumeView/>)
         views.set(3, <React.Fragment/>)
         views.set(4, <React.Fragment/>)
 

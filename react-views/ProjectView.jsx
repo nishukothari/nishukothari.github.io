@@ -64,7 +64,7 @@ class ProjectView extends React.Component{
                     <Card className="projCard">
                         <Card.Header className="pCardHeader">{show["name"]}</Card.Header>
                         <Card.Body className="pCardBody">{show["description"]}</Card.Body>
-                        <Card.Footer className="pCardFooter"></Card.Footer>
+                        <Card.Footer className="pCardFooter">Languages: {show["languages"].join(", ")}</Card.Footer>
                     </Card>
                 )
                 ++i
@@ -89,11 +89,11 @@ class ProjectView extends React.Component{
                 </div>
             )
         }else{
-            console.log(this.state.shownElements)
-            console.log(this.state.display)
             return(
                 <div className="project">
                     <Col xs={{span: 12, offset: 0}} className="projContainer">
+                        <br></br>
+                        <div>This page is currently under construction. Please feel free to contact me at nishuk@umich.edu if you would like to see code from any of these projects or discuss any of them further!</div>
                         {this.state.display}
                     </Col>
                 </div>
