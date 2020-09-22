@@ -1,0 +1,19 @@
+#master-view {
+    height: 100vh;
+}
+
+.FullSite {
+    height: 100vh;
+}
+
+.Linked {
+    color: white;
+}
+
+.Tab {
+    color: white !important;
+}
+
+.Nav {
+    background-color: black;
+}

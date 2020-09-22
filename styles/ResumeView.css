@@ -1,0 +1,18 @@
+.resume {
+    background-color: lightgray;
+    background-size: cover;
+    height: 100%;
+}
+
+.resumeContainer {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding: 0%;
+}
+
+.pdfWindow {
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+}
