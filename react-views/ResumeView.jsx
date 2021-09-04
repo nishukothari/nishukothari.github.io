@@ -1,5 +1,4 @@
 import React from 'react'
-import {Col} from 'react-bootstrap'
 import '../public/styles/ResumeView.css'
 
 class ResumeView extends React.Component {
@@ -8,12 +7,7 @@ class ResumeView extends React.Component {
     }
 
     render(){
-        return(
-            <div className="resume">
-                <Col xs={{span: 12, offset: 0}} className="resumeContainer">
-                    <embed className="pdfWindow" src="docs/Kothari_Nishant_Resume.pdf"></embed>
-                </Col>
-            </div>)
+
     }
 }
 
