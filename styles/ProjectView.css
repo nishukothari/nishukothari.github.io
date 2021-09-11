@@ -1,38 +1,38 @@
-.project {
-    background-color: lightgray;
-    background-size: cover;
-    min-height: 100%;
+.Description {
+    display: none;
 }
 
-.projContainer {
-    width: 80%;
+.ButtonCol {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.ButtonRow {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.FilterButton {
+    width: 100%;
     height: 100%;
-    margin: auto;
-    padding: 0%;
+    background-color: #05003a;
+    color: whitesmoke;
+    border: none;
+    border-radius: .25rem
 }
 
-.projCard {
-    height: 250px;
-    width:  29%;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-    border-radius: 15px;
+.MobileButtons {
+    display: none;
 }
 
-.pCardHeader {
-    background-color: midnightblue;
-    color: white;
-}
+@media only screen and (max-width: 600px) {
+    .MobileButtons {
+        display: flex;
+        padding: 3px;
+    }
 
-.pCardBody {
-    background-color: black;
-    color: white;
-}
-
-.pCardFooter {
-    background-color: midnightblue;
-    color: white;
+    .ButtonRow {
+        display: none;
+    }
 }
