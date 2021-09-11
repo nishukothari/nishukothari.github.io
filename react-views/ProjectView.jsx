@@ -155,7 +155,10 @@ class ProjectView extends React.Component{
         this.setState({
             defaultTag: true,
             defaultCategory: true,
-            defaultLanguage: true
+            defaultLanguage: true,
+            categoryFilter: null,
+            languageFilter: null,
+            tagFilter: null
         })
     }
 
