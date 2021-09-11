@@ -1,0 +1,38 @@
+.Description {
+    display: none;
+}
+
+.ButtonCol {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.ButtonRow {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.FilterButton {
+    width: 100%;
+    height: 100%;
+    background-color: #05003a;
+    color: whitesmoke;
+    border: none;
+    border-radius: .25rem
+}
+
+.MobileButtons {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .MobileButtons {
+        display: flex;
+        padding: 3px;
+    }
+
+    .ButtonRow {
+        display: none;
+    }
+}

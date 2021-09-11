@@ -7,7 +7,7 @@ class HomeView extends React.Component {
     }
 
     render(){
-
+        return null
     }
 }
 
