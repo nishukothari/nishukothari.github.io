@@ -96,7 +96,7 @@ class ProjectView extends React.Component{
                     </tr>,
                     <tr>
                         <td className='Description' id={descriptionClass} colSpan='100%'>
-                            {project["description"]}
+                            {project["description"]} <br/><br/>  {"Languages: " + project["languages"].join(", ")}
                         </td>
                     </tr>]
             )
