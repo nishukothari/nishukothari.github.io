@@ -9,7 +9,8 @@
     "wp": "./node_modules/.bin/webpack --watch",
     "build": "webpack",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d public"
+    "deploy": "gh-pages -b master -d public",
+    "format": "prettier --write \"react-views/*.{js,jsx}\""
   },
   "author": "Nishant Kothari",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "@babel/preset-react": "^7.0.0",
     "css-loader": "^4.2.2",
     "gh-pages": "^2.0.1",
+    "prettier": "^2.4.0",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
     "webpack": "^4.22.1",
