@@ -2,18 +2,21 @@
     height: 100vh;
 }
 
+.nav-link {
+    color: whitesmoke;
+}
+
+.DesktopNav {
+    visibility: visible;
+    background: #05003a;
+}
+
 .FullSite {
     height: 100vh;
 }
 
-.Linked {
-    color: white;
-}
-
-.Tab {
-    color: white !important;
-}
-
-.Nav {
-    background-color: black;
+@media only screen and (max-width: 600px) {
+    .DesktopNav {
+        height: 10vh;
+    }
 }
