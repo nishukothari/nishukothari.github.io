@@ -41,6 +41,14 @@
             "description": "Various computer security projects: Cryptography - implemented a length extension attack, padding oracle attack, and a program to forge RSA signatures; Web Security - implemented a SQL injection attack and a CSRF attack; Networking - implemented a Man in the Middle Attack; Application Security - Implemented a buffer overflow attack"
         },
         {
+            "name": "Housing Price Prediction",
+            "key": "hp",
+            "category": "School",
+            "tags": ["Machine Learning"],
+            "languages": ["R"],
+            "description": "Used multiple machine learning techniques to build a model that predicted the price of a particular house in Ames, Iowa given predictor variables. These models included linear regression, neural networks, k-nearest neighbor, regression tree, svm, and random forest, and a model that stacked them all together. The Mean Absolute Error of this model was $10874 per house and the Mean Squared Error was $6384"
+        },
+        {
             "name": "Image Resizer",
             "key": "ir",
             "category": "School",
