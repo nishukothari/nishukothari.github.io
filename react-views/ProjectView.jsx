@@ -227,6 +227,9 @@ class ProjectView extends React.Component {
       return (
         <div>
           <Col>
+            <Row>
+              <div className='Info'> If you would like more information about any of these projects, please send me an email at: nishuk@umich.edu</div>
+            </Row>
             <Row className="ButtonRow">
               <Col className="ButtonCol">
                 <FilterDropdown
