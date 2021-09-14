@@ -22,6 +22,10 @@
     border-radius: .25rem
 }
 
+.Info {
+    padding: 10px;
+}
+
 .MobileButtons {
     display: none;
 }
