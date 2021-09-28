@@ -29,7 +29,15 @@ module.exports = {
       {
         test: /\.(png|jpg)$/,
         loader: 'url-loader'
-      }
+      },
+      {
+        test: /\.(pdf)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
     ]
   },
   node: {

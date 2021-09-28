@@ -49,6 +49,9 @@ class MasterView extends React.Component {
           <NavLink href="#projects" onClick={() => this.changeView(1)}>
             Projects
           </NavLink>
+          <NavLink href="#home"  onClick={() => window.open("docs/Nishant_Kothari_Resume.pdf")}>
+            Resume
+          </NavLink>
         </Navbar>
         {views.get(this.state.currentTab)}
       </div>

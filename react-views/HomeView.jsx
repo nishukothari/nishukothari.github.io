@@ -1,6 +1,5 @@
 import React from "react";
 import "../public/styles/HomeView.css";
-import {Row, Col} from "react-bootstrap";
 
 class HomeView extends React.Component {
   constructor(props) {
